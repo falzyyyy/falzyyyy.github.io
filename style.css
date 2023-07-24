@@ -1,84 +1,117 @@
-/* Gaya untuk foto pribadi */
+/* Gaya tambahan untuk halaman profil */
+body {
+  padding-top: 70px; /* Menambahkan padding atas agar navbar tidak menghalangi konten */
+}
+
+/* Gaya untuk profil pic */
 .profile-pic-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 200px; /* Sesuaikan ukuran foto pribadi */
-  height: 200px; /* Sesuaikan ukuran foto pribadi */
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ubah nilai bayangan sesuai keinginan */
-  margin: 0 auto 20px; /* Sesuaikan margin sesuai kebutuhan */
+  text-align: center;
 }
 
 .profile-pic {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff; /* Tambahkan bingkai putih untuk profil pic */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow pada profil pic */
 }
 
-/* Gaya untuk teks judul beranda */
-#beranda h1.display-4 {
-  font-size: 2.5rem; /* Ukuran teks */
-  font-weight: bold; /* Ketebalan teks */
-  margin-bottom: 20px; /* Jarak bawah dari teks sebelumnya */
+/* Gaya untuk bagian beranda */
+#beranda {
+  background-color: #f8f9fa; /* Atur latar belakang beranda */
+  color: #333; /* Atur warna teks di beranda */
 }
 
-/* Gaya untuk teks lead beranda */
-#beranda p.lead {
-  font-size: 1.25rem; /* Ukuran teks */
-  color: #777; /* Warna teks */
-  margin-bottom: 30px; /* Jarak bawah dari teks sebelumnya */
+/* Gaya untuk bagian tentang */
+#pendidikan {
+  background-color: #fff; /* Atur latar belakang tentang */
 }
 
-/* Gaya untuk judul seksi */
-section h2.display-4 {
-  font-size: 2.5rem; /* Ukuran teks */
-  font-weight: bold; /* Ketebalan teks */
-  margin-bottom: 40px; /* Jarak bawah dari teks sebelumnya */
+#pendidikan h3 {
+  margin-top: 10px; /* Atur jarak atas untuk judul bagian pendidikan */
 }
 
-/* Gaya untuk teks lead pada seksi */
-section p.lead {
-  font-size: 1.25rem; /* Ukuran teks */
-  color: #777; /* Warna teks */
-  margin-bottom: 20px; /* Jarak bawah dari teks sebelumnya */
+#pendidikan p {
+  margin-bottom: 0; /* Atur jarak bawah untuk teks dalam bagian pendidikan */
 }
 
-/* Gaya untuk tombol "Lihat Portofolio" */
-#beranda .btn-primary {
-  font-size: 1.25rem; /* Ukuran teks */
-  padding: 12px 25px; /* Padding tombol */
+/* Gaya untuk bagian projects */
+#portofolio {
+  background-color: #f8f9fa; /* Atur latar belakang projects */
+}
+
+/* Gaya untuk sosial media icons */
+.social-media {
+  margin-top: 20px;
+  text-align: center; /* Atur ikon sosial media menjadi berada di tengah */
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 10px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #007bff;
 }
 
 /* Gaya untuk footer */
 footer {
-  background-color: #333; /* Warna latar belakang */
-  color: #fff; /* Warna teks */
+  background-color: #343a40; /* Atur latar belakang footer */
 }
 
-/* Gaya untuk tautan media sosial */
-.social-media a {
-  color: #777; /* Warna ikon media sosial */
-  font-size: 24px; /* Ukuran ikon media sosial */
-  margin-right: 10px; /* Jarak antara ikon media sosial */
+footer p {
+  margin-bottom: 0; /* Atur jarak bawah untuk teks dalam footer */
 }
 
-.social-media {
-  font-size: 30px;
-  margin-bottom: 20px;
+footer .social-icon {
+  margin: 5px; /* Atur jarak antara ikon sosial media di footer */
 }
 
-.social-icon {
-  color: #007bff; /* Change the color to match your design */
-  margin: 0 10px;
-  transition: color 0.3s;
+/* Gaya untuk efek transisi navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
 }
 
-.social-icon:hover {
-  color: #2d3033; /* Change the color on hover to match your design */
+/* Gaya untuk link di navbar */
+.navbar .nav-link {
+  color: #333; /* Atur warna link di navbar */
+  transition: color 0.3s ease-in-out;
 }
 
-#kontak {
-  background-color: rgb(255, 255, 255);
+.navbar .nav-link:hover {
+  color: #007bff; /* Atur warna link di navbar saat dihover */
+}
+
+/* Gaya untuk tombol Search di navbar */
+.navbar .btn-outline-success {
+  color: #007bff; /* Atur warna teks tombol Search */
+  border-color: #007bff; /* Atur warna border tombol Search */
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #007bff; /* Atur warna latar belakang tombol Search saat dihover */
+  color: #fff; /* Atur warna teks tombol Search saat dihover */
+}
+
+/* Gaya untuk link di footer */
+footer a {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Gaya untuk kartu di bagian projects */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom pada kartu saat dihover */
 }
