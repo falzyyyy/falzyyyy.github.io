@@ -59,7 +59,7 @@ footer {
 
 /* Gaya untuk tautan media sosial */
 .social-media a {
-  color: #fff; /* Warna ikon media sosial */
+  color: #777; /* Warna ikon media sosial */
   font-size: 24px; /* Ukuran ikon media sosial */
   margin-right: 10px; /* Jarak antara ikon media sosial */
 }
@@ -77,4 +77,8 @@ footer {
 
 .social-icon:hover {
   color: #2d3033; /* Change the color on hover to match your design */
+}
+
+#kontak {
+  background-color: rgb(255, 255, 255);
 }
