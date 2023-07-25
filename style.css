@@ -113,17 +113,17 @@ footer .social-icon {
 }
 
 .navbar .nav-link:hover {
-  color: #007bff; /* Atur warna link di navbar saat dihover */
+  color: #212121; /* Atur warna link di navbar saat dihover */
 }
 
 /* Gaya untuk tombol Search di navbar */
 .navbar .btn-outline-success {
-  color: #007bff; /* Atur warna teks tombol Search */
-  border-color: #007bff; /* Atur warna border tombol Search */
+  color: #212121; /* Atur warna teks tombol Search */
+  border-color: #212121; /* Atur warna border tombol Search */
 }
 
 .navbar .btn-outline-success:hover {
-  background-color: #007bff; /* Atur warna latar belakang tombol Search saat dihover */
+  background-color: #212121; /* Atur warna latar belakang tombol Search saat dihover */
   color: #fff; /* Atur warna teks tombol Search saat dihover */
 }
 
