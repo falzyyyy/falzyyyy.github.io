@@ -49,6 +49,7 @@
 .carousel-inner img {
   max-height: 150px; /* Atur tinggi maksimum gambar */
   object-fit: cover; /* Biarkan gambar mengisi seluruh kontainer tanpa distorsi */
+  margin: 0 auto;
   border-radius: 50%; /* Tambahkan border radius untuk membuat sudut gambar lebih lembut */
   box-shadow: 0 0 10px rgba(175, 170, 170, 0.3); /* Tambahkan shadow pada gambar */
 }
