@@ -1,20 +1,61 @@
-/* Gaya tambahan untuk halaman profil */
-body {
-  padding-top: 50px; /* Menambahkan padding atas agar navbar tidak menghalangi konten */
+/* CSS untuk mengatur tampilan ikon media sosial */
+.social-media {
+  margin-top: 20px; /* Atur jarak dari konten di atasnya */
 }
 
-/* Gaya untuk profil pic */
+.social-icon {
+  font-size: 24px; /* Ukuran font ikon */
+  margin: 10px; /* Jarak antara ikon */
+  color: #555; /* Warna ikon */
+  transition: color 0.3s ease-in-out; /* Transisi warna ketika dihover */
+}
+
+.social-icon:hover {
+  color: #007bff; /* Warna ikon ketika dihover */
+}
+
+/* CSS untuk mengatur logo bulat di navbar */
+.navbar-brand img {
+  width: 40px; /* Ukuran logo bulat */
+  height: 40px;
+  border-radius: 50%; /* Membuat logo bulat */
+  margin-right: 10px; /* Jarak dari teks */
+}
+
+/* CSS untuk mengatur list navbar di ujung kanan */
+.navbar-nav {
+  margin-left: auto; /* Mendorong list navbar ke ujung kanan */
+}
+
+/* CSS untuk mengatur gambar profil bulat di bagian beranda */
 .profile-pic-container {
-  text-align: center;
+  width: 200px; /* Ukuran kontainer gambar profil */
+  height: 200px;
+  border-radius: 50%; /* Membuat gambar profil bulat */
+  overflow: hidden; /* Menghilangkan bagian gambar yang melebihi kontainer */
+  margin: 0 auto; /* Tengahkan gambar profil */
+  border: 5px solid #fff; /* Tambahkan garis putih sekeliling gambar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Tambahkan shadow pada gambar */
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #fff; /* Tambahkan bingkai putih untuk profil pic */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow pada profil pic */
+  width: 100%; /* Gambar profil mengisi seluruh kontainer */
+  height: 100%;
+  object-fit: cover; /* Biarkan gambar mengisi seluruh kontainer tanpa distorsi */
+  border-radius: 50%; /* Membuat gambar profil bulat */
+}
+
+/* CSS untuk mengatur ukuran gambar di bagian pendidikan */
+.carousel-inner img {
+  max-height: 150px; /* Atur tinggi maksimum gambar */
+  object-fit: cover; /* Biarkan gambar mengisi seluruh kontainer tanpa distorsi */
+  border-radius: 50%; /* Tambahkan border radius untuk membuat sudut gambar lebih lembut */
+  box-shadow: 0 0 10px rgba(175, 170, 170, 0.3); /* Tambahkan shadow pada gambar */
+}
+
+/* Gaya tambahan untuk halaman profil */
+body {
+  padding-top: 50px; /* Menambahkan padding atas agar navbar tidak menghalangi konten */
 }
 
 /* Gaya untuk bagian beranda */
@@ -41,21 +82,9 @@ body {
   background-color: #f8f9fa; /* Atur latar belakang projects */
 }
 
-/* Gaya untuk sosial media icons */
-.social-media {
-  margin-top: 20px;
-  text-align: center; /* Atur ikon sosial media menjadi berada di tengah */
-}
-
-.social-icon {
-  font-size: 24px;
-  margin: 10px;
-  color: #555;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-  color: #007bff;
+/* Gaya untuk sosial media icons di footer */
+footer .social-media {
+  justify-content: center; /* Atur ikon sosial media menjadi berada di tengah */
 }
 
 /* Gaya untuk footer */
